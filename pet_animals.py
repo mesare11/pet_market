@@ -3,4 +3,3 @@ class pet_animals(pet_goods):
     pet_goods.__init__(self, name, price)
     self.kind_pet = kind_pet
     self.age = age
-    pass
