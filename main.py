@@ -39,9 +39,10 @@ feeder3=pet_feeders("Rodenta", 3, "For water", "3 years", "For Cats", "25x25x25"
 feeder4=pet_feeders("Rodenta", 3, "For eat", "3 years", "For Cats", "25x25x25")
 feeder5=pet_feeders("Rodenta", 1, "For eat", "1 year", "For Rodents", "5x5x5")
 prices=array('l',[cat1.display_prices(),cat2.display_prices(),cat3.display_prices(),cat4.display_prices(),cat5.display_prices(),rat1.display_prices(),rat2.display_prices(),rat3.display_prices(),hamster1.display_prices(),hamster2.display_prices(),cage1.display_prices(),cage2.display_prices(),cage3.display_prices(),cage4.display_prices(),cage5.display_prices(),stern1.display_prices(),stern2.display_prices(),stern3.display_prices(),stern4.display_prices(),stern5.display_prices(),toy1.display_prices(),toy2.display_prices(),toy3.display_prices(),toy4.display_prices(),toy5.display_prices(),feeder1.display_prices(),feeder2.display_prices(),feeder3.display_prices(),feeder4.display_prices(),feeder5.display_prices()])
-def sum_prices():
-    print("The total value of all goods "+format(sum(prices))+"$")
-sum_prices()
+def sum_goods(all_goods):
+    summa=sum(all_goods)
+    print("The total value of all goods "+format(summa)+"$")
+sum_goods(prices)
 toy1.display_toys(),toy2.display_toys(),toy3.display_toys(),toy4.display_toys(),toy5.display_toys()
 stern1.display_stern(),stern2.display_stern(),stern3.display_stern(),stern4.display_stern(),stern5.display_stern()
 rat1.display_rodents(), rat2.display_rodents(),rat3.display_rodents(), hamster1.display_rodents(), hamster2.display_rodents()
