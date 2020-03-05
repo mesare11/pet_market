@@ -13,8 +13,15 @@ def sum_goods(all_goods:array) ->None:
     This function sums all goods from array
     param all_goods array of ints of goods
     """
-    summa=sum(all_goods)
+    numberObject=-1
+    lenArray=len(all_goods)-1
+    prices=[]
+    while (lenArray>numberObject):
+        numberObject=numberObject+1
+        prices.append(all_goods[numberObject].display_prices())
+    summa=sum(prices)
     print("The total value of all goods "+format(summa)+"$")
+    
 cat1=pet_cats("Tom", 20, "Cat", "3 month", "Siamese")
 cat2=pet_cats("Joe", 15, "Cat", "4 month", "Scottish fold")
 cat3=pet_cats("Jim", 20, "Cat", "3 month", "Siamese")
@@ -45,9 +52,11 @@ feeder2=pet_feeders("Vendy", 2, "For water", "2 years", "For Cats", "20x20x20")
 feeder3=pet_feeders("Rodenta", 3, "For water", "3 years", "For Cats", "25x25x25")
 feeder4=pet_feeders("Rodenta", 3, "For eat", "3 years", "For Cats", "25x25x25")
 feeder5=pet_feeders("Rodenta", 1, "For eat", "1 year", "For Rodents", "5x5x5")
-prices=array('l',[cat1.display_prices(),cat2.display_prices(),cat3.display_prices(),cat4.display_prices(),cat5.display_prices(),rat1.display_prices(),rat2.display_prices(),rat3.display_prices(),hamster1.display_prices(),hamster2.display_prices(),cage1.display_prices(),cage2.display_prices(),cage3.display_prices(),cage4.display_prices(),cage5.display_prices(),stern1.display_prices(),stern2.display_prices(),stern3.display_prices(),stern4.display_prices(),stern5.display_prices(),toy1.display_prices(),toy2.display_prices(),toy3.display_prices(),toy4.display_prices(),toy5.display_prices(),feeder1.display_prices(),feeder2.display_prices(),feeder3.display_prices(),feeder4.display_prices(),feeder5.display_prices()])
-goods_in_market=array('u',[cat1.display_cats(),cat2.display_cats(),cat3.display_cats(),cat4.display_cats(),cat5.display_cats(),rat1.display_rodents(),rat2.display_rodents(),rat3.display_rodents(),hamster1.display_rodents(),hamster2.display_rodents(),cage1.display_cage(),cage2.display_cage(),cage3.display_cage(),cage4.display_cage(),cage5.display_cage(),stern1.display_stern(),stern2.display_stern(),stern3.display_stern(),stern4.display_stern(),stern5.display_stern(),toy1.display_toys(),toy2.display_toys(),toy3.display_toys(),toy4.display_toys(),toy5.display_toys(),feeder1.display_feeders(),feeder2.display_feeders(),feeder3.display_feeders(),feeder4.display_feeders(),feeder5.display_feeders()])
-sum_goods(prices)
+
+all_goods=[cat1,cat2,cat3,cat4,cat5,rat1,rat2,rat3,hamster1,hamster2,cage1,cage2,cage3,cage4,cage5,stern1,stern2,stern3,stern4,stern5,toy1,toy2,toy3,toy4,toy5,feeder1,feeder2,feeder3,feeder4,feeder5]
+sum_goods(all_goods)   
+
+
 toy1.display_toys(),toy2.display_toys(),toy3.display_toys(),toy4.display_toys(),toy5.display_toys()
 stern1.display_stern(),stern2.display_stern(),stern3.display_stern(),stern4.display_stern(),stern5.display_stern()
 rat1.display_rodents(), rat2.display_rodents(),rat3.display_rodents(), hamster1.display_rodents(), hamster2.display_rodents()
