@@ -7,6 +7,7 @@ from pet_feeders import pet_feeders
 from pet_rodents import pet_rodents
 from pet_stern import pet_stern
 from pet_toys import pet_toys
+from goods_creator import goods_creator
 from array import array
 def sum_goods(all_goods:array) ->None:
     """
@@ -56,6 +57,8 @@ feeder5=pet_feeders("Rodenta", 1, "For eat", "1 year", "For Rodents", "5x5x5")
 all_goods=[cat1,cat2,cat3,cat4,cat5,rat1,rat2,rat3,hamster1,hamster2,cage1,cage2,cage3,cage4,cage5,stern1,stern2,stern3,stern4,stern5,toy1,toy2,toy3,toy4,toy5,feeder1,feeder2,feeder3,feeder4,feeder5]
 sum_goods(all_goods)   
 
+
+goods_creator.input_goods()
 
 toy1.display_toys(),toy2.display_toys(),toy3.display_toys(),toy4.display_toys(),toy5.display_toys()
 stern1.display_stern(),stern2.display_stern(),stern3.display_stern(),stern4.display_stern(),stern5.display_stern()
