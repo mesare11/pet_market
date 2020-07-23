@@ -8,3 +8,18 @@ class pet_feeders(pet_items):
 
     def display_feeders(self):
         print(self.name, self.price, self.kind_item, self.expiration_date, self.feeder_for_kind_animal, self.feeder_size)
+
+    def add_feeder():
+        goods_array=[]
+        name=input("Please input name goods: ")
+        price=int(input("Please input price goods: "))
+        kind_item=input("Please input kind item: ")
+        expiration_date=input("Please input expiration date: ")
+        feeder_for_kind_animal=input("Please input feeder for kind animal: ")
+        feeder_size=input("Please input feeder size: ")
+        goods_array.append(name)
+        goods_array.append(price)
+        goods_array.append(kind_item)
+        goods_array.append(expiration_date)
+        goods_array.append(feeder_for_kind_animal)
+        goods_array.append(feeder_size)
